@@ -28,7 +28,7 @@ This was a fun experiment, and I learned quite a bit making it!
 
 Open the nano text editor in your terminal and type: sudo nano ~/.zshrc
 
-add this line below to the buttom of the file under # Aliases or MyAliases, etc.
+Add this line below to the buttom of the file under # Aliases or MyAliases, etc.
 
 - alias sf="python3 simple_fetch.py"
 
@@ -37,7 +37,7 @@ add this line below to the buttom of the file under # Aliases or MyAliases, etc.
 
 Open the nano text editor in your terminal and type: sudo nano ~/.bashrc
 
-add this line below to the buttom of the file under # Aliases or MyAliases, etc.
+Add this line below to the buttom of the file under # Aliases or MyAliases, etc.
 
 - alias sf="python3 simple_fetch.py"
 
