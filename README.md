@@ -11,12 +11,12 @@ This was a fun experiment, and I learned quite a bit making it!
 
 - Python3
 - Platform
-- Pyfiglet
-- Simple_Chalk
+- pyfiglet
+- simple_chalk
 
 #### Dependencies
 
-- Pyfiglet
+- pyfiglet
 - simple_chalk
 
 ## Usage
