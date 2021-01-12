@@ -9,7 +9,7 @@ SimpleFetch is a lightweight script that I wrote for fun, and it was an attempt 
 - Python3
 - Platform
 - Pyfiglet
-- Chalk
+- Simple_Chalk
 
 [Back To The Top](#read-me-template)
 ## License
