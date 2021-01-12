@@ -11,6 +11,35 @@ SimpleFetch is a lightweight script that I wrote for fun, and it was an attempt 
 - Pyfiglet
 - Simple_Chalk
 
+## Usage
+
+- Make Sure you have Python 3 or later installed!
+- add the simple_fetch.py script to your home directory.
+
+### ZSH
+
+Open the nano text editor in your terminal and type: sudo nano ~/.zshrc
+
+add this line below to the buttom of the file under # Aliases or MyAliases, etc.
+
+- alias sf="python3 simple_fetch.py"
+
+
+### Bash
+
+Open the nano text editor in your terminal and type: sudo nano ~/.bashrc
+
+add this line below to the buttom of the file under # Aliases or MyAliases, etc.
+
+- alias sf="python3 simple_fetch.py"
+
+
+### fish
+
+Open your terminal and type: alias --save sf="python3 simple_fetch.py"
+
+
+
 [Back To The Top](#read-me-template)
 ## License
 
