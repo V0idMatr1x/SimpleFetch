@@ -48,7 +48,7 @@ Open your terminal and type: alias --save sf="python3 simple_fetch.py"
 
 MIT License
 
-Copyright (c) [2021] [Christopher Paige]
+Copyright (c) [2021] [ChristopherPaige]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
