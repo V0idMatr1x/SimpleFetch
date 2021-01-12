@@ -13,7 +13,7 @@ SimpleFetch is a lightweight script that I wrote for fun, and it was an attempt 
 
 ## Usage
 
-- Make Sure you have Python 3 or later installed!
+- Make Sure you have Python3 or later installed!
 - add the simple_fetch.py script to your home directory.
 
 ### ZSH
