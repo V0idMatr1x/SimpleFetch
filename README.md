@@ -14,6 +14,11 @@ This was a fun experiment, and I learned quite a bit making it!
 - Pyfiglet
 - Simple_Chalk
 
+#### Dependencies
+
+- Pyfiglet
+- simple_chalk
+
 ## Usage
 
 - Make Sure you have Python3 installed!
