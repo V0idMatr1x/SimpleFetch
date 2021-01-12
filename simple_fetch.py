@@ -13,7 +13,7 @@ process = [
     " [ Host ]: "
 ]
 
-# Platform
+# System
 p_name = process[0] + str(platform.system())
 print(chalk.green.bold(p_name))
 
