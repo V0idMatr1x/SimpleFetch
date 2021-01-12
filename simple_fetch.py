@@ -17,10 +17,6 @@ process = [
 p_sys = process[0] + str(platform.system())
 print(chalk.green.bold(p_sys))
 
-# Architecture
-p_arch = process[1] + str(platform.architecture()) + " " + str(platform.machine())
-print(chalk.green.bold(p_arch))
-
 # Release
 p_rel = process[2] + str(platform.release())
 print(chalk.green.bold(p_rel))
@@ -32,5 +28,10 @@ print(chalk.green.bold(p_node))
 # Architecture
 p_arch = process[1] + str(platform.architecture()) + " " + str(platform.machine())
 print(chalk.green.bold(p_arch))
+
+
+
+
+
 
 
