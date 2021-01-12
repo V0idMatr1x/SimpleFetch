@@ -16,13 +16,10 @@ process = [
 # System
 p_sys = process[0] + str(platform.system())
 print(chalk.green.bold(p_sys))
-<<<<<<< HEAD
-=======
 
 # Architecture
 p_arch = process[1] + str(platform.architecture()) + " " + str(platform.machine())
 print(chalk.green.bold(p_arch))
->>>>>>> 20586b218f39293f1af857c1c7b0fde273f09e66
 
 # Release
 p_rel = process[2] + str(platform.release())
