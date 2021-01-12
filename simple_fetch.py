@@ -7,7 +7,7 @@ f = Figlet(font='slant')
 print(f.renderText('SimpleFetch'))
 
 process = [
-    " [ Platform ]: ",
+    " [ OS ]: ",
     " [ Architecture ]: ",
     " [ Kernel ]: ",
     " [ Host ]: "
