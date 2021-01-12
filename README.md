@@ -3,7 +3,7 @@
 ![Project Image](https://i.postimg.cc/28kK8NpK/2021-01-12-12-16.png)
 ## Description
 
-SimpleFetch is a lightweight script that I wrote for fun, and it was an attempt to make a bare-bones implementation of Neofetch written in Python3. Neofetch is obviously my favorite, and is clearly a better option. Neofetch is much more complex, and provides alot more functionality! Here is a link if you want to try it out! [Neofetch](https://github.com/dylanaraps/neofetch) 
+SimpleFetch is a lightweight script that I wrote for fun, and it was an attempt to make a bare-bones implementation of Neofetch written in Python3. Neofetch is obviously my favorite, and is clearly a better option. Neofetch is much more complex, and provides a lot more functionality! Here is a link if you want to try it out! [Neofetch](https://github.com/dylanaraps/neofetch) 
 
 This was a fun experiment, and I learned quite a bit making it! 
 
