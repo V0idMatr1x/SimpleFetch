@@ -34,7 +34,7 @@ add this line below to the buttom of the file under # Aliases or MyAliases, etc.
 - alias sf="python3 simple_fetch.py"
 
 
-### fish
+### Fish
 
 Open your terminal and type: alias --save sf="python3 simple_fetch.py"
 
