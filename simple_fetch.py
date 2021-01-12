@@ -14,8 +14,8 @@ process = [
 ]
 
 # System
-p_name = process[0] + str(platform.system())
-print(chalk.green.bold(p_name))
+p_sys = process[0] + str(platform.system())
+print(chalk.green.bold(p_sys))
 
 # Architecture
 p_arch = process[1] + str(platform.architecture()) + " " + str(platform.machine())
