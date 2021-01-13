@@ -30,7 +30,7 @@ This was a fun experiment, and I learned quite a bit making it!
 
 ![Project Image](https://i.postimg.cc/gjBgH6Z5/2021-01-12-17-53.png)
 
-- Make Sure you have Python3 installed!
+- Make sure you have Python3 installed!
 - Add the simple_fetch.py script to your home directory.
 
 ### ZSH
