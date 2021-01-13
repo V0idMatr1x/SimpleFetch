@@ -24,8 +24,14 @@ This was a fun experiment, and I learned quite a bit making it!
 #### Dependencies
 
 - pyfiglet
+  
+  - pip3 install pyfiglet
+  
 - simple_chalk
 
+  - pip3 install simple_chalk
+
+  
 ## Usage
 
 ![Project Image](https://i.postimg.cc/gjBgH6Z5/2021-01-12-17-53.png)
