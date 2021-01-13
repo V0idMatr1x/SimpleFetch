@@ -2,7 +2,7 @@ import psutil
 import platform
 from pyfiglet import Figlet
 from simple_chalk import chalk, green
-from datetime import datetime
+import cpuinfo
 
 # Banner
 f = Figlet(font='slant')
@@ -12,10 +12,11 @@ process = [
     " [ OS ]: ",
     " [ Kernel ]: ",
     " [ Host ]: ",
-    " [ CPU Cores ]: ",
+    " [ CPU Info ]: ",
+    " [ CPU Cores ]:",
     " [ Architecture ]: ",
 ]
-
+ 
 # System
 p_sys = process[0] + str(platform.system())
 print(chalk.green.bold(p_sys))
@@ -28,14 +29,28 @@ print(chalk.green.bold(p_rel))
 p_node = process[2] + str(platform.node())
 print(chalk.green.bold(p_node))
 
+# Function: CPU Info
+def fetch_cpu_info():
 # CPU Cores
-cores = str(psutil.cpu_count(logical=True))
-cpu_cores = process[3] + f"({cores})"
-print(chalk.green.bold(cpu_cores))
+    cores = str(psutil.cpu_count(logical=True))
+    cpu_cores = process[4] + f"({cores})"
+# CPU Model
+    cpu_model = cpuinfo.get_cpu_info()['brand_raw']
+    return print(chalk.bold.green(process[3] + cpu_model + str(cpu_cores)))
+fetch_cpu_info()
+
+# GPU Info
+
 
 # Architecture
-p_arch = process[4] + str(platform.architecture()) + " " + str(platform.machine())
+p_arch = process[5] + str(platform.architecture()) + " " + str(platform.machine())
 print(chalk.green.bold(p_arch))
+
+
+
+
+
+
 
 
 

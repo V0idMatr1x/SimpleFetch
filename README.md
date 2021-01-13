@@ -24,18 +24,23 @@ This was a fun experiment, and I learned quite a bit making it!
 #### Dependencies
 
 - pyfiglet
+  
+  - pip3 install pyfiglet
+
 - simple_chalk
+
+  - pip3 install simple_chalk
 
 ## Usage
 
-- Make Sure you have Python3 installed!
+- Make sure you have Python3 installed!
 - Add the simple_fetch.py script to your home directory.
 
 ### ZSH
 
 Open the nano text editor in your terminal and type: sudo nano ~/.zshrc
 
-Add this line below to the buttom of the file under # Aliases or MyAliases, etc.
+Add this line below to the bottom of the file under # Aliases or MyAliases, etc.
 
 - alias sf="python3 simple_fetch.py"
 
@@ -44,7 +49,7 @@ Add this line below to the buttom of the file under # Aliases or MyAliases, etc.
 
 Open the nano text editor in your terminal and type: sudo nano ~/.bashrc
 
-Add this line below to the buttom of the file under # Aliases or MyAliases, etc.
+Add this line below to the bottom of the file under # Aliases or MyAliases, etc.
 
 - alias sf="python3 simple_fetch.py"
 
@@ -79,4 +84,5 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 
