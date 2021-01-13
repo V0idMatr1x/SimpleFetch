@@ -24,11 +24,16 @@ This was a fun experiment, and I learned quite a bit making it!
 #### Dependencies
 
 - pyfiglet
+  
+  - pip3 install pyfiglet
+
 - simple_chalk
+
+  - pip3 install simple_chalk
 
 ## Usage
 
-- Make Sure you have Python3 installed!
+- Make sure you have Python3 installed!
 - Add the simple_fetch.py script to your home directory.
 
 ### ZSH
