@@ -16,7 +16,7 @@ process = [
     " [ Kernel ]: ",
     " [ Host ]: ",
     " [ CPU Info ]: ",
-    " [ CPU Cores ]:",
+    " [ CPU Cores ]: ",
     " [ GPU Model ]: ",
     " [ Architecture ]: ",
 ]
@@ -32,7 +32,6 @@ print(chalk.green.bold(p_rel))
 # Node
 p_node = process[2] + str(platform.node())
 print(chalk.green.bold(p_node))
-
 
 def fetch_CPU_info(): # Function: CPU Info
 # CPU Cores
