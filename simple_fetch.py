@@ -15,8 +15,8 @@ process = [
     " [ OS ]: ",
     " [ Kernel ]: ",
     " [ Host ]: ",
-    " [ CPU Info ]: ",
     " [ CPU Cores ]: ",
+    " [ CPU Info ]: ",
     " [ GPU Model ]: ",
     " [ Architecture ]: ",
 ]
