@@ -59,6 +59,10 @@ Add this line below to the bottom of the file under # Aliases or MyAliases, etc.
 Open your terminal and type: alias --save sf="python3 simple_fetch.py"
 
 
+# Contributors
+- Christopher Paige
+- Montassar Ben Dhifallah [Github Profile](https://github.com/Momentum-TN)
+
 
 [Back To The Top](#SimpleFetch)
 ## License
