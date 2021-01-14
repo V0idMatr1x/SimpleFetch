@@ -24,12 +24,17 @@ This was a fun experiment, and I learned quite a bit making it!
 #### Dependencies
 
 - pyfiglet
-  
   - pip3 install pyfiglet
 
 - simple_chalk
-
   - pip3 install simple_chalk
+
+- psutil
+  - pip3 install psutil 
+
+- py-cpuinfo
+  - pip3 install py-cpuinfo
+
 
 ## Usage
 
