@@ -62,7 +62,7 @@ Open your terminal and type: alias --save sf="python3 simple_fetch.py"
 # Contributors
 - Christopher Paige
 - Montassar Ben Dhifallah [Github Profile](https://github.com/Momentum-TN)
-
+ - Co-Authored, [fetch_GPU_info()]
 
 [Back To The Top](#SimpleFetch)
 ## License
