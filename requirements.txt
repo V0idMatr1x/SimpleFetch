@@ -1,0 +1,4 @@
+pyfiglet
+simple_chalk
+psutil
+py-cpuinfo
