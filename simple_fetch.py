@@ -1,9 +1,16 @@
-import psutil
+import os
 import platform
+
+def i_req():
+    print("Installing required packages...")
+    os.system("pip3 install -r  requirements.txt")
+import psutil
 import subprocess
 import cpuinfo
 from pyfiglet import Figlet
 from simple_chalk import chalk, green
+
+i_req()
 
 
 # Banner
