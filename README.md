@@ -4,12 +4,11 @@
 
 ![Project Logo](https://i.postimg.cc/xTV41LPx/Simple-Fetch.png)
 
-![Project Logo](https://i.postimg.cc/jdbsqPJZ/simple-fetch.png)
+![Project Logo](https://i.postimg.cc/CLmWyqCZ/simplefetch.png)
 
 
 ## Description
 
-![Project Image](https://i.postimg.cc/jdbsqPJZ/simple-fetch.png)
 
 SimpleFetch is a lightweight script that I wrote for fun, and it was an attempt to make a bare-bones implementation of Neofetch written in Python3. Neofetch is obviously my favorite, and is clearly a better option. Neofetch is much more complex, and provides a lot more functionality! Here is a link if you want to try it out! [Neofetch](https://github.com/dylanaraps/neofetch) 
 
