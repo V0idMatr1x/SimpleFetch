@@ -1,9 +1,12 @@
 import os
 import platform
 
+
+
 def i_req():
-    print("Installing required packages...")
-    os.system("pip3 install -r  requirements.txt")
+
+# Possible solution is to os.system(pip check for required deps if found ignore the installation script)
+
 import psutil
 import subprocess
 import cpuinfo
