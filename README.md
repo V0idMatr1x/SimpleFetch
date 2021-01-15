@@ -4,6 +4,7 @@
 
 ![Project Logo](https://i.postimg.cc/xTV41LPx/Simple-Fetch.png)
 
+![Project Logo](https://i.postimg.cc/jdbsqPJZ/simple-fetch.png)
 
 
 ## Description
