@@ -1,14 +1,28 @@
 import os
 import platform
-
+import sys
+import subprocess
+import pkg_resources
 
 # Auto-Installer
 def i_req():
+    
+    required= []
+    with open('requirements.txt','r') as f:
+        required = [line for line in f.readlines()]
+    
+    installed = [pkg.key for pkg in pkg_resources.working_set]
+    missing = [item for item in required if item not in installed]
+
+    if missing:
+        python = sys.executable
+        subprocess.check_call([python, '-m', 'pip', 'install', *missing], stdout=subprocess.DEVNULL)
 
 # Possible solution is to os.system(pip check for required deps if found ignore the installation script)
 
+i_req()
+
 import psutil
-import subprocess
 import cpuinfo
 from pyfiglet import Figlet
 from simple_chalk import chalk, green
@@ -18,7 +32,7 @@ Auto installer needs a medium for detecting if
 dependencies are already present on the users system, 
 and if so, ignore the installation message + script
 """
-i_req()
+
 
 
 # Banner
@@ -79,5 +93,4 @@ fetch_GPU_info()
 # Architecture
 p_arch = process[6] + str(platform.architecture()) + " " + str(platform.machine())
 print(chalk.green.bold(p_arch))
-
 
