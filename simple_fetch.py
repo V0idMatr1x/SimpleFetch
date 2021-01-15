@@ -2,7 +2,7 @@ import os
 import platform
 
 
-
+# Auto-Installer
 def i_req():
 
 # Possible solution is to os.system(pip check for required deps if found ignore the installation script)
