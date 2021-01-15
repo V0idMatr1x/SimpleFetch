@@ -17,23 +17,13 @@ This was a fun experiment, and I learned quite a bit making it!
 #### Technologies
 
 - Python3
+- OS
 - Platform
-- pyfiglet
-- simple_chalk
-
-#### Dependencies
-
-- pyfiglet
-  - pip3 install pyfiglet
-
-- simple_chalk
-  - pip3 install simple_chalk
-
-- psutil
-  - pip3 install psutil 
-
+- Subprocess
 - py-cpuinfo
-  - pip3 install py-cpuinfo
+- psutil
+- pyfiglet
+- simple_chalk
 
 
 ## Usage
@@ -69,6 +59,7 @@ Open your terminal and type: alias --save sf="python3 simple_fetch.py"
 - Montassar Ben Dhifallah [Github Profile](https://github.com/Momentum-TN)
   - Co-Authored, fetch_GPU_info()
   - Co-Authored, i_req()
+  - Requirements.txt
 
 [Back To The Top](#SimpleFetch)
 ## License
