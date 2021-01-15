@@ -9,7 +9,11 @@ import subprocess
 import cpuinfo
 from pyfiglet import Figlet
 from simple_chalk import chalk, green
-
+"""
+Auto installer needs a medium for detecting if 
+dependencies are already present on the users system, 
+and if so, ignore the installation message + script
+"""
 i_req()
 
 
