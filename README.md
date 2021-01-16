@@ -29,7 +29,7 @@ This was a fun experiment, and I learned quite a bit making it!
 ## Usage
 
 - Make sure you have Python3 installed!
-- Add the simple_fetch.py script to your home directory.
+- Copy the SimpleFetch folder to your home directory.
 
 ### ZSH
 
@@ -37,7 +37,7 @@ Open the nano text editor in your terminal and type: sudo nano ~/.zshrc
 
 Add this line below to the bottom of the file under # Aliases or MyAliases, etc.
 
-- alias sf="python3 simple_fetch.py"
+- alias sf="cd SimpleFetch && python3 simple_fetch.py; cd ~"
 
 
 ### Bash
@@ -46,12 +46,12 @@ Open the nano text editor in your terminal and type: sudo nano ~/.bashrc
 
 Add this line below to the bottom of the file under # Aliases or MyAliases, etc.
 
-- alias sf="python3 simple_fetch.py"
+- alias sf="cd SimpleFetch && python3 simple_fetch.py; cd ~"
 
 
 ### Fish
 
-Open your terminal and type: alias --save sf="python3 simple_fetch.py"
+Open your terminal and type: alias -s sf="cd SimpleFetch && python3 simple_fetch.py; cd ~"
 
 
 # Contributors
