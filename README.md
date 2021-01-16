@@ -17,7 +17,6 @@ This was a fun experiment, and I learned quite a bit making it!
 #### Technologies
 
 - Python3
-- OS
 - Platform
 - Subprocess
 - py-cpuinfo
