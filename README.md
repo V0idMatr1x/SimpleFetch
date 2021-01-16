@@ -50,7 +50,7 @@ Add this line below to the bottom of the file under # Aliases or MyAliases, etc.
 
 ### Fish
 
-Open your terminal and type: alias -s sf="cd SimpleFetch && python3 simple_fetch.py; cd ~"
+Open your terminal and type: alias -s sf="cd SimpleFetch/ && python3 simple_fetch.py; cd ~"
 
 
 # Contributors
