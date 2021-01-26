@@ -4,20 +4,20 @@ import subprocess
 import pkg_resources
 
 # Auto-Installer
-def i_req():
+def i_req(for_pkg):
     
     required= []
     with open('requirements.txt','r') as f:
         required = [line for line in f.readlines()]
     
-    installed = [pkg.key for pkg in pkg_resources.working_set]
+    installed = for_pkg
     missing = [item for item in required if item not in installed]
 
     if missing:
         python = sys.executable
         subprocess.check_call([python, '-m', 'pip', 'install', *missing], stdout=subprocess.DEVNULL)
 
-i_req()
+i_req([pkg.key for pkg in pkg_resources.working_set])
 
 import psutil
 import cpuinfo
