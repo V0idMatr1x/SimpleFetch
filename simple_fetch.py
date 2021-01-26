@@ -53,37 +53,35 @@ print(chalk.green.bold(p_rel))
 p_node = process[2] + str(platform.node())
 print(chalk.green.bold(p_node))
 
-def fetch_CPU_info(): # Function: CPU Info
+def fetch_CPU_info(brand, cores):
+    
+    print(chalk.bold.green(process[4] + brand + process[3] + str(cores)))
 
-# CPU Cores
-    cores = str(psutil.cpu_count(logical=True))
-    cpu_cores = process[3] + f"({cores})"
-# CPU Model
-    cpu_model = cpuinfo.get_cpu_info()['brand_raw']
-    return print(chalk.bold.green(process[4] + cpu_model + str(cpu_cores)))
-
-fetch_CPU_info()
+fetch_CPU_info(
+    cpuinfo.get_cpu_info()['brand_raw'], 
+    psutil.cpu_count(logical=True)
+)
 
 # GPU Info
 # Todo: Solve GPU info [ Solved: tmp, Experimental ]. 
-# Todo: Begin testing Experimental GPU features.
-# Todo make amd compatible, will require some conditions to coordinate events
-def fetch_GPU_info(): # Experiemental Function: temp method for quering GPU
-    
-    proc = subprocess.Popen(["lspci | grep -i --color ''01:00.0"], stdout=subprocess.PIPE, shell=True)
+# Todo make amd compatible, make a better solution for quering GPU
+def fetch_GPU_info(grep_for_gpu): 
+    proc = subprocess.Popen(
+    [grep_for_gpu], 
+    stdout=subprocess.PIPE, shell=True
+    )
     
     (out, err) = proc.communicate()
-
     out = out.decode("utf-8")
     
     GPU_data = str(out)
     # split the string based on the position of the second colon
     split_data = GPU_data.split(":", 2)
     # get last item and get rid of whitespaces
-    GPU_model = process[5] + split_data[len(split_data)-1].strip() 
-    return print(chalk.green.bold(GPU_model))
+    GPU_model = process[5] + split_data[len(split_data)-1].strip()
+    print(chalk.green.bold(GPU_model))
 
-fetch_GPU_info()
+fetch_GPU_info("lspci | grep -i --color ''01:00.0")
 
 # Architecture
 p_arch = process[6] + str(platform.architecture()) + " " + str(platform.machine())
