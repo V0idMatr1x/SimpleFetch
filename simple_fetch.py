@@ -24,9 +24,6 @@ import cpuinfo
 from pyfiglet import Figlet
 from simple_chalk import chalk, green
 
-
-
-
 # Banner
 f = Figlet(font='slant')
 print(f.renderText('SimpleFetch'))
