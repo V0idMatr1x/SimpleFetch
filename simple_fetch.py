@@ -15,7 +15,10 @@ def i_req(for_pkg):
 
     if missing:
         python = sys.executable
-        subprocess.check_call([python, '-m', 'pip', 'install', *missing], stdout=subprocess.DEVNULL)
+        subprocess.check_call (
+        [python, '-m', 'pip', 'install', *missing], 
+        stdout=subprocess.DEVNULL
+        )
 
 i_req([pkg.key for pkg in pkg_resources.working_set])
 
@@ -64,9 +67,10 @@ fetch_CPU_info(
 # Todo make amd compatible, make a better solution for quering GPU
 def fetch_GPU_info(grep_for_gpu): 
     
-    proc = subprocess.Popen(
+    proc = subprocess.Popen (
     [grep_for_gpu], 
-    stdout=subprocess.PIPE, shell=True
+    stdout=subprocess.PIPE, 
+    shell=True
     )
     
     (out, err) = proc.communicate()
