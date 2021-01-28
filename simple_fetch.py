@@ -79,7 +79,7 @@ def fetch_GPU_info(grep_for_gpu):
     GPU_model = process[5] + split_data[len(split_data)-1].strip()
     print(chalk.green.bold(GPU_model))
 
-fetch_GPU_info("lspci | grep -i --color ''01:00.0")
+fetch_GPU_info("lspci | grep -i --color  01:00.0 " )
 
 # Architecture
 p_arch = process[6] + str(platform.architecture()) + " " + str(platform.machine())
