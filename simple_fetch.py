@@ -64,7 +64,7 @@ fetch_CPU_info(
 
 # GPU Info
 # Todo: Solve GPU info [ Solved: tmp, Experimental ]. 
-# Todo make amd compatible, make a better solution for quering GPU
+# Todo: Make AMD compatible, make a better solution for quering GPU
 def fetch_GPU_info(grep_for_gpu): 
     
     proc = subprocess.Popen (
