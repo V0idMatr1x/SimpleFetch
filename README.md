@@ -42,7 +42,7 @@ This was a fun experiment, and I learned quite a bit making it!
 - Functional Programming
 - System Calls, File I/O
 - Team Collaboration
-- Hacking together an autoinstaller for dependencies.
+- Hacking together an auto-installer for dependencies.
 
 # Contributors
 - Christopher Paige
