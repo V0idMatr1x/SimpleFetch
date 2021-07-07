@@ -9,9 +9,9 @@
 ## Description
 ![Project_Image2](https://i.postimg.cc/jdbsqPJZ/simple-fetch.png)
 
-SimpleFetch is a command-line utility that i wrote for the purposes of learning and fun!
+SimpleFetch is a command-line utility that I wrote for the purposes of learning and fun!
 It was inspired by our beloved neofetch, and I am currently working on a new implementation in Rust!
-GotSpec.rs is a project that i am currently working on, and I intend it to be as full-featured as Neofetch is now. One thing I appreciate, and often take for granted in open-source is the options that are available to me. Hopefully, in the future, GotSpec.rs can be a viable alternative for you as well!
+GotSpec.rs is a project that I am currently working on, and I intend it to be as full-featured as Neofetch is now. One thing I appreciate, and often take for granted in open-source is the options that are available to me. Hopefully, in the future, GotSpec.rs can be a viable alternative for you as well!
 
 
 For those uninitiated in the terminal macgic that is Neofetch!
