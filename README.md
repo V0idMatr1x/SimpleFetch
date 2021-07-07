@@ -34,7 +34,7 @@ This was a fun experiment, and I learned quite a bit making it!
 - Interacting with system utilities with python using grep & sub routines
 - Functional Programming
 - System Calls, File I/O
-
+- Team Collaboration
 
 # Contributors
 - Christopher Paige
