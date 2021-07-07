@@ -35,7 +35,7 @@ This was a fun experiment, and I learned quite a bit making it!
 ## What I learned creating SimpleFetch ?
 
 - Python's Standard Library
-- Python's eco-system
+- Python's Ecosystem
 - Python's Type System
 - Destructuring Lists in Python
 - Interacting with system utilities with python using grep & sub routines
