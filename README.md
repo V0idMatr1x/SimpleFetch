@@ -25,32 +25,15 @@ This was a fun experiment, and I learned quite a bit making it!
 - simple_chalk
 
 
-## Usage
+## What I learned creating SimpleFetch ?
 
-- Make sure you have Python3 installed!
-- Copy the SimpleFetch folder to your home directory.
-
-### ZSH
-
-Open the nano text editor in your terminal and type: sudo nano ~/.zshrc
-
-Add this line below to the bottom of the file under # Aliases or MyAliases, etc.
-
-- alias sf="cd SimpleFetch && python3 simple_fetch.py; cd ~"
-
-
-### Bash
-
-Open the nano text editor in your terminal and type: sudo nano ~/.bashrc
-
-Add this line below to the bottom of the file under # Aliases or MyAliases, etc.
-
-- alias sf="cd SimpleFetch && python3 simple_fetch.py; cd ~"
-
-
-### Fish
-
-Open your terminal and type: alias -s sf="cd SimpleFetch/ && python3 simple_fetch.py; cd ~"
+- Python's Standard Library
+- Python's eco-system
+- Python's Type System
+- Destructuring Lists in Python
+- Interacting with system utilities with python using grep & sub routines
+- Functional Programming
+- System Calls, File I/O
 
 
 # Contributors
