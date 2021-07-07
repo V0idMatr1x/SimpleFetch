@@ -7,10 +7,17 @@
 
 
 ## Description
-![Project Image](https://i.postimg.cc/CLmWyqCZ/simplefetch.png)
 ![Project_Image2](https://i.postimg.cc/jdbsqPJZ/simple-fetch.png)
 
-SimpleFetch is a lightweight script that I wrote for fun, and it was an attempt to make a bare-bones implementation of Neofetch written in Python3. Neofetch is obviously my favorite, and is clearly a better option. Neofetch is much more complex, and provides a lot more functionality! Here is a link if you want to try it out! [Neofetch](https://github.com/dylanaraps/neofetch) 
+SimpleFetch is a command-line utility that i wrote for the purposes of learning and fun!
+It was inspired by our beloved neofetch, and I am currently working on a new implementation in Rust!
+GotSpec.rs is a project that i am currently working on, and I intend it to be as full-featured as Neofetch is now. One thing I appreciate, and often take for granted in open-source is the options that are available to me. Hopefully, in the future, GotSpec.rs can be a viable alternative for you as well!
+
+
+For those uninitiated in the terminal macgic that is Neofetch!
+
+! [Neofetch](https://github.com/dylanaraps/neofetch) 
+
 
 This was a fun experiment, and I learned quite a bit making it! 
 
