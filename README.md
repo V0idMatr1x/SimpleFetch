@@ -14,9 +14,9 @@ It was inspired by our beloved neofetch, and I am currently working on a new imp
 GotSpec.rs is a project that I am currently working on, and I intend it to be as full-featured as Neofetch is now. One thing I appreciate, and often take for granted in open-source is the options that are available to me. Hopefully, in the future, GotSpec.rs can be a viable alternative for you as well!
 
 
-For those uninitiated in the terminal macgic that is Neofetch!
+For those uninitiated in the terminal magic that is Neofetch!
 
-! [Neofetch](https://github.com/dylanaraps/neofetch) 
+![Neofetch](https://github.com/dylanaraps/neofetch) 
 
 
 This was a fun experiment, and I learned quite a bit making it! 
