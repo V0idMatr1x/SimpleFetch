@@ -9,7 +9,7 @@
 ## Description
 ![Project_Image2](https://i.postimg.cc/jdbsqPJZ/simple-fetch.png)
 
-SimpleFetch is a command-line utility that I wrote for the purposes of learning and fun! It was inspired by our beloved Neofetch, and I am currently working on a new implementation in Rust! GotSpec.rs is a project that I am currently working on, and I intend it to be as full-featured as Neofetch is now. One thing I appreciate, and often take for granted, in open-source is the options that are available to me. Hopefully, in the future, GotSpec.rs can be a viable alternative for you as well!
+SimpleFetch is a command-line utility that I wrote for the purposes of learning and fun! It was inspired by Neofetch.
 
 For those uninitiated in the terminal magic that is Neofetch!
 
@@ -32,12 +32,11 @@ This was a fun experiment, and I learned quite a bit making it!
 ## What I learned creating SimpleFetch ?
 
 - Python's Standard Library
-- Python's Ecosystem
 - Python's Type System
 - Destructuring Lists in Python
 - Interacting with system utilities with python using grep & sub routines
 - Functional Programming
-- System Calls, File I/O
+- File I/O
 - Team Collaboration
 - Hacking together an auto-installer for dependencies.
 
