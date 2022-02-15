@@ -34,7 +34,7 @@ This was a fun experiment, and I learned quite a bit making it!
 - Python's Standard Library
 - Python's Type System
 - Destructuring Lists in Python
-- Interacting with system utilities with python using grep & sub routines
+- Interacting with system utilities with python using grep & sub-processes
 - Functional Programming
 - File I/O
 - Team Collaboration
