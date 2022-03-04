@@ -58,6 +58,7 @@ print(chalk.green.bold(p_rel))
 p_node = process[2] + str(platform.node())
 print(chalk.green.bold(p_node))
 
+
 def fetch_CPU_info(brand, cores):
     print(chalk.bold.green(process[4] + brand + process[3] + str(cores)))
 
@@ -66,7 +67,6 @@ fetch_CPU_info(
     cpuinfo.get_cpu_info()['brand_raw'], 
     psutil.cpu_count(logical=True)
 )
-
 
 
 # GPU Info
