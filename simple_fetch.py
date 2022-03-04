@@ -5,7 +5,6 @@ import pkg_resources
 
 # Auto-Installer
 def i_req(for_pkg):
-    
     required = []
     with open('requirements.txt','r') as f:
         required = [line for line in f.readlines()]
@@ -20,16 +19,20 @@ def i_req(for_pkg):
         stdout=subprocess.DEVNULL
         )
 
+
 i_req([pkg.key for pkg in pkg_resources.working_set])
+
 
 import psutil
 import cpuinfo
 from pyfiglet import Figlet
 from simple_chalk import chalk, green
 
+
 # Banner
 f = Figlet(font='slant')
 print(f.renderText('SimpleFetch'))
+
 
 process = [
     " [ OS ]: ",
@@ -40,6 +43,8 @@ process = [
     " [ GPU Model ]: ",
     " [ Architecture ]: ",
 ]
+
+
 
 # System
 p_sys = process[0] + str(platform.system())
@@ -54,19 +59,19 @@ p_node = process[2] + str(platform.node())
 print(chalk.green.bold(p_node))
 
 def fetch_CPU_info(brand, cores):
-    
     print(chalk.bold.green(process[4] + brand + process[3] + str(cores)))
+
 
 fetch_CPU_info(
     cpuinfo.get_cpu_info()['brand_raw'], 
     psutil.cpu_count(logical=True)
 )
 
+
+
 # GPU Info
 # Todo: Solve GPU info [ Solved: tmp, Experimental ]. 
-# Todo: Make AMD compatible, make a better solution for quering GPU
 def fetch_GPU_info(grep_for_gpu): 
-    
     proc = subprocess.Popen (
     [grep_for_gpu], 
     stdout=subprocess.PIPE, 
@@ -83,7 +88,9 @@ def fetch_GPU_info(grep_for_gpu):
     GPU_model = process[5] + split_data[len(split_data)-1].strip()
     print(chalk.green.bold(GPU_model))
 
+
 fetch_GPU_info("lspci | grep -i --color  01:00.0 ")
+
 
 # Architecture
 p_arch = process[6] + str(platform.architecture()) + " " + str(platform.machine())
