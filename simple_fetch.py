@@ -3,6 +3,7 @@ import sys
 import subprocess
 import pkg_resources
 
+
 # Auto-Installer
 def i_req(for_pkg):
     required = []
