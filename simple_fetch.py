@@ -7,17 +7,16 @@ import pkg_resources
 # Auto-Installer
 def i_req(for_pkg):
     required = []
-    with open('requirements.txt','r') as f:
+    with open("requirements.txt", "r") as f:
         required = [line for line in f.readlines()]
-    
+
     installed = for_pkg
     missing = [item for item in required if item not in installed]
 
     if missing:
         python = sys.executable
-        subprocess.check_call (
-        [python, '-m', 'pip', 'install', *missing], 
-        stdout=subprocess.DEVNULL
+        subprocess.check_call(
+            [python, "-m", "pip", "install", *missing], stdout=subprocess.DEVNULL
         )
 
 
@@ -31,8 +30,8 @@ from simple_chalk import chalk, green
 
 
 # Banner
-f = Figlet(font='slant')
-print(f.renderText('SimpleFetch'))
+f = Figlet(font="slant")
+print(f.renderText("SimpleFetch"))
 
 
 process = [
@@ -44,7 +43,6 @@ process = [
     " [ GPU Model ]: ",
     " [ Architecture ]: ",
 ]
-
 
 
 # System
@@ -64,29 +62,22 @@ def fetch_CPU_info(brand, cores):
     print(chalk.bold.green(process[4] + brand + process[3] + str(cores)))
 
 
-fetch_CPU_info(
-    cpuinfo.get_cpu_info()['brand_raw'], 
-    psutil.cpu_count(logical=True)
-)
+fetch_CPU_info(cpuinfo.get_cpu_info()["brand_raw"], psutil.cpu_count(logical=True))
 
 
 # GPU Info
-# Todo: Solve GPU info [ Solved: tmp, Experimental ]. 
-def fetch_GPU_info(grep_for_gpu): 
-    proc = subprocess.Popen (
-    [grep_for_gpu], 
-    stdout=subprocess.PIPE, 
-    shell=True
-    )
-    
+# Todo: Solve GPU info [ Solved: tmp, Experimental ].
+def fetch_GPU_info(grep_for_gpu):
+    proc = subprocess.Popen([grep_for_gpu], stdout=subprocess.PIPE, shell=True)
+
     (out, err) = proc.communicate()
     out = out.decode("utf-8")
-    
+
     GPU_data = str(out)
     # split the string based on the position of the second colon
     split_data = GPU_data.split(":", 2)
     # get last item and get rid of whitespaces
-    GPU_model = process[5] + split_data[len(split_data)-1].strip()
+    GPU_model = process[5] + split_data[len(split_data) - 1].strip()
     print(chalk.green.bold(GPU_model))
 
 
