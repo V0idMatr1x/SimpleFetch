@@ -5,7 +5,7 @@ import pkg_resources
 
 
 # Auto-Installer
-def i_req(for_pkg):
+def i_req(for_pkg: tuple) -> tuple:
     required = []
     with open("requirements.txt", "r") as f:
         required = [line for line in f.readlines()]
@@ -30,11 +30,11 @@ from simple_chalk import chalk, green
 
 
 # Banner
-f = Figlet(font="slant")
+f: str = Figlet(font="slant")
 print(f.renderText("SimpleFetch"))
 
 
-process = [
+process: list = [
     " [ OS ]: ",
     " [ Kernel ]: ",
     " [ Host ]: ",
@@ -46,19 +46,19 @@ process = [
 
 
 # System
-p_sys = process[0] + str(platform.system())
+p_sys: str = process[0] + str(platform.system())
 print(chalk.green.bold(p_sys))
 
 # Release
-p_rel = process[1] + str(platform.release())
+p_rel: str = process[1] + str(platform.release())
 print(chalk.green.bold(p_rel))
 
 # Node
-p_node = process[2] + str(platform.node())
+p_node: str = process[2] + str(platform.node())
 print(chalk.green.bold(p_node))
 
 
-def fetch_CPU_info(brand, cores):
+def fetch_CPU_info(brand, cores: tuple) -> tuple:
     print(chalk.bold.green(process[4] + brand + process[3] + str(cores)))
 
 
@@ -67,11 +67,11 @@ fetch_CPU_info(cpuinfo.get_cpu_info()["brand_raw"], psutil.cpu_count(logical=Tru
 
 # GPU Info
 # Todo: Solve GPU info [ Solved: tmp, Experimental ].
-def fetch_GPU_info(grep_for_gpu):
+def fetch_GPU_info(grep_for_gpu: str) -> str:
     proc = subprocess.Popen([grep_for_gpu], stdout=subprocess.PIPE, shell=True)
 
     (out, err) = proc.communicate()
-    out = out.decode("utf-8")
+    out: str = out.decode("utf-8")
 
     GPU_data = str(out)
     # split the string based on the position of the second colon
@@ -85,5 +85,5 @@ fetch_GPU_info("lspci | grep -i --color  01:00.0 ")
 
 
 # Architecture
-p_arch = process[6] + str(platform.architecture()) + " " + str(platform.machine())
+p_arch: str = process[6] + str(platform.architecture()) + " " + str(platform.machine())
 print(chalk.green.bold(p_arch))
