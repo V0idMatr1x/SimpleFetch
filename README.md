@@ -9,6 +9,8 @@
 ## Description
 ![Project_Image2](https://i.postimg.cc/jdbsqPJZ/simple-fetch.png)
 
+https://user-images.githubusercontent.com/88049272/164915530-7b7a9399-3301-45dc-b1e3-93e7c067231b.mp4
+
 SimpleFetch is a command-line utility that I wrote for the purposes of learning and fun! It was inspired by Neofetch.
 
 For those uninitiated in the terminal magic that is Neofetch!
