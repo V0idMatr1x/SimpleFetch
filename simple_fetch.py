@@ -5,7 +5,7 @@ import pkg_resources
 
 
 # Auto-Installer
-def i_req(for_pkg: tuple) -> tuple:
+def i_req(for_pkg):
     required = []
     with open("requirements.txt", "r") as f:
         required = [line for line in f.readlines()]
