@@ -13,9 +13,7 @@ https://user-images.githubusercontent.com/88049272/164915530-7b7a9399-3301-45dc-
 
 SimpleFetch is a command-line utility that I wrote for the purposes of learning and fun! It was inspired by Neofetch.
 
-For those uninitiated in the terminal magic that is Neofetch!
-
-![Neofetch](https://github.com/dylanaraps/neofetch) 
+For those uninitiated in the terminal magic that is ![Neofetch](https://github.com/dylanaraps/neofetch) 
 
 
 This was a fun experiment, and I learned quite a bit making it! 
@@ -36,7 +34,7 @@ This was a fun experiment, and I learned quite a bit making it!
 - Python's Standard Library
 - Python's Type System
 - Destructuring Lists in Python
-- Interacting with system utilities with python using grep & sub-processes
+- Interacting with system utilities with python using sub-processes
 - File I/O
 - Team Collaboration
 - Hacking together an auto-installer for dependencies.
