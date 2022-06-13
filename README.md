@@ -36,7 +36,6 @@ This was a fun experiment, and I learned quite a bit making it!
 - Destructuring Lists in Python
 - Interacting with system utilities with python using sub-processes
 - File I/O
-- Team Collaboration
 - Hacking together an auto-installer for dependencies.
 
 # Contributors
